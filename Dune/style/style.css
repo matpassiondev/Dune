@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*=================== DESCRIPTION DES FONTS ======================*/
+
+@font-face {
+    font-family: "DINNextLTPro-Black";
+    src: url("../fonts/DINNextLTPro-Black.eot"),
+        url("../fonts/DINNextLTPro-Black.woff2"),
+        url("../fonts/DINNextLTPro-Black.woff"),
+        url("../fonts/DINNextLTPro-Black.ttf");
+}
+
+@font-face {
+    font-family: "DINNextLTPro-Light";
+    src: url("../fonts/DINNextLTPro-Light.eot"),
+    url("../fonts/DINNextLTPro-Light.woff2"),
+    url("../fonts/DINNextLTPro-Light.woff"),
+    url("../fonts/DINNextLTPro-Light.ttf");
+}
+
+
+
+
+
+
+
+/*==================== SCROLL SNAPING ====================*/
+
+html {
+    scroll-snap-type: y proximity;
+  }
+  
+  section {
+    scroll-snap-align: start;
+  }
+
+
+
+/*=========== IMAGES DE FOND ========================*/
+
+section {
+
+    width: 98.958vw;
+    height: 100vh;
+    background-clip: border-box;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#section1 {
+    background-image: url(../medias/images/dune-timothee-chalamet.jpg);
+}
+
+#section2 {
+    background-image: url(../medias/images/dune-sharon-duncan-brewster.jpeg);
+    
+}
+
+#section3 {
+    background-image: url(../medias/images/dune-production_01.jpg);
+}
+
+#section4 {
+    background-image: url(../medias/images/dune-cast-scaled.jpeg);
+}
+
+#section5 {
+    background-image: url(../medias/images/dune-timothee-chalamet-rebecca-ferguson.jpeg);
+}
+
+
+
+
+/*===========MENU BURGER=====================*/
+
+nav {
+    position: fixed;
+    top: 15vh;
+    left: 1vw;
+    background-color: rgba(121, 121, 121, 0.274);
+    padding: 1vh 1vh;
+    border-bottom-right-radius:5%;
+     border-top-right-radius: 5%;
+}
+
+header>label>div>div {
+    width: 2vw;
+    height: .6vh;
+    background-color: white;
+    margin-bottom: .5vh;
+    border-radius: 5vh;
+}
+
+header>input, header>nav {
+    display: none;
+}
+
+#menu:checked~nav {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+nav>a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 2vh;
+    font-family:"DINNextLTPro-Light";
+}
+
+
+/*============Position du logo===========*/
+
+#logo {
+    width: 20vw;
+    position: fixed;
+    top: 2.5vh;
+    left: 1vw;
+    z-index: 1000;
+}
+
+label>div {
+    position: fixed;
+    top: 10vh;
+    left: 2vw;
+}
+
+
+/*=========== DIFFERENTS LOGOS SVG ================= */
+
+svg {
+    width: 5vw;
+    height: 5vh;
+    color: white;
+    position: fixed;
+    right: 1vw;
+    z-index: 1000;
+}
+
+svg:nth-of-type(1) {
+    top: 10vh;
+}
+
+svg:nth-of-type(2) {
+    top: 20vh;
+}
+
+svg:nth-of-type(3) {
+    top: 70vh;
+}
+
+svg:nth-of-type(4) {
+    top: 80vh;
+}
+
+svg:nth-of-type(5) {
+    top: 90vh;
+}
+
+svg>a {
+    color: white;
+}
+
+/*========== VIDEO INTEGREE =================*/
+
+#video {
+    position: relative;
+    top: 40vh;
+    left: 10vw;
+}
+
+#clipTitle {
+    color: white;
+    position: relative;
+    top: 37vh;
+    left: 16.5vw;
+    font: 45px "DINNextLTPRO-Light";
+    max-width: 50%;
+}
+
+
+    /*with api*/
+#clip {
+    width: 40vw;
+    height: calc(40vw * 390 / 640);
+    display: block;
+    position: absolute;
+    top: 45vh;
+    left: 13.3vw;
+  }
+  
+  .scroll {
+    position: fixed !important;
+    width: 20vw !important;
+    height: calc(20vw * 2 / 3) !important;
+    top: 5vh !important;
+    left: 73vw !important;
+    z-index: 1500;
+  }
+  
+
+
+
+/*============= ARTICLE DE LA SLIDE 2 =============*/
+
+#section2>article {
+    background-color: rgba(245, 245, 245, 0.596);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: relative;
+    top: 45vh;
+}
+
+#section2>article>p {
+    text-align: justify;
+    margin: 1vh 1vw;
+    font: 20px "DINNextLTPro-Light";
+}
+
+.about {
+    position: absolute;
+    top: -6vh;
+    left: 10vw;
+    color: white;
+    font-family: "DINNextLTPro-Black";
+    font-size: 2rem;
+}
+
+
+
+
+/*================= CAROUSEL =====================*/
+
+#carousel {
+    width: 50vw;
+    height: 50vh;
+    margin: auto;
+    position: relative;
+    position: relative;
+    height: 70vh;
+    width: 43vw;
+    top: 10vh;
+    left: 15vw;
+    
+   }
+
+#carousel>img {
+    height: 70vh;
+    width: 43vw;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.josh {
+    object-position: center top;
+}
+    /*Flèches*/
+
+#gauche>div, #droite>div {
+
+    height: 1vh;
+    width: 3vw;
+    background-color: white;
+    margin-bottom: 1vh;
+    border-radius: 2vh;
+    cursor: pointer;
+}
+
+#gauche>div:nth-of-type(1) {
+    rotate: -45deg;
+    position: relative;
+    top: -26vh;
+    left: 38vw;
+
+}
+
+#gauche>div:nth-of-type(2) {
+    rotate: 45deg;
+    position: relative;
+    top: -24.3vh;
+    left: 38vw;
+
+}
+
+#droite>div:nth-of-type(1) {
+    rotate: 45deg;
+    position: relative;
+    top: -30vh;
+    left: 88vw;
+}
+
+#droite>div:nth-of-type(2) {
+    rotate: -45deg;
+    position: relative;
+    top: -28.3vh;
+    left: 88vw;
+}
+
+    /*Paragraphe*/
+
+#personnage>p {
+    display: none;
+}
+
+.visible {
+    display: inline-block !important;
+    background-color:rgba(245, 245, 245, 0.596);
+    width: 20vw;
+    text-align: center;
+    position : relative;
+    left: 2vw;
+    top : 7vh;
+    font-size: 1.5rem;
+    font-family: "DINNextLTPro-Light";
+}
+
+.char {
+    position: absolute;
+    left: 2vw;
+    color: white;
+    font-family: "DINNextLTPro-Black";
+    font-size: 2rem;
+}
+
+
+/*=============================== MAP ==========================*/
